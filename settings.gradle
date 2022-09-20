@@ -1,0 +1,6 @@
+rootProject.name = 'compilers'
+
+include'rust'
+include'antlr4'
+include'visitor'
+include'symtab'

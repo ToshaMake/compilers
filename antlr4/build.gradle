@@ -1,0 +1,17 @@
+plugins{
+    id'java'
+    id'antlr'
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    antlr "org.antlr:antlr4:4.9.3"
+}
+
+generateGrammarSource {
+    arguments += [
+            "-long-messages", "-visitor" , "-no-listener"
+    ]
+}
